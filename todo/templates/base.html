@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Todo App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'add_task' %}">Add Task</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    {% block content %}
+    {% endblock content %}
+    <footer class="bg-info   text-center text-lg-start">
+        <div class="container p-4">
+          <div class="row">
+            <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Todo App</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Links</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="{% url 'home' %}" class="text-dark">Home</a>
+                </li>
+                <li>
+                  <a href="{% url 'add_task' %}" class="text-dark">Add Task</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase">Contact</h5>
+              <ul class="list-unstyled mb-0">
+                <li>
+                  <a href="#!" class="text-dark">Email</a>
+                </li>
+                <li>
+                  <a href="#!" class="text-dark">Phone</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          &copy; 2023 Todo App
+        </div>
+      </footer>
+</body>
+</html>
