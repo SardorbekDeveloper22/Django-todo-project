@@ -1,8 +1,8 @@
-# ToDo loyihasiga hush kelibsiz
-- ishga tushirishdan oldin `.env` fayliga `debug` va `secret_key` qiymatlarni berib oling
-- so'ngra `python manage.py makemigrations` qilib migratsion fayllarni yaratib oling
-- keyin `python manage.py migrate` qilib DB ga ma'lumotlarni yozib olamiz,shu bilan loyiha ishga tushadi
-
+# Welcome to the ToDo project
+- set `debug` and `secret_key` values to `.env` file before running
+- then create the migration files by `python manage.py makemigrations`
+- then we write the data to the DB by `python manage.py migrate', and the project starts
+  
 ## Home Page
 ![home](home.png "Home")
 
